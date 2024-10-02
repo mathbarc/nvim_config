@@ -4,7 +4,7 @@ require("cmake-tools").setup({
     ctest_command = "ctest", -- this is used to specify ctest command path
     cmake_use_preset = true,
     cmake_regenerate_on_save = true, -- auto generate when save CMakeLists.txt
-    cmake_generate_options = { "-DCMAKE_EXPORT_COMPILE_COMMANDS=0" }, -- this will be passed when invoke `CMakeGenerate`
+    cmake_generate_options = { "-GNinja", "-DCMAKE_EXPORT_COMPILE_COMMANDS=1" }, -- this will be passed when invoke `CMakeGenerate`
     cmake_build_options = {}, -- this will be passed when invoke `CMakeBuild`
     -- support macro expansion:
     --       ${kit}
@@ -16,7 +16,7 @@ require("cmake-tools").setup({
         end
         return "build/${variant:buildType}"
     end, -- this is used to specify generate directory for cmake, allows macro expansion, can be a string or a function returning the string, relative to cwd.
-    cmake_soft_link_compile_commands = false, -- this will automatically make a soft link from compile commands file to project root dir
+    cmake_soft_link_compile_commands = true, -- this will automatically make a soft link from compile commands file to project root dir
     cmake_compile_commands_from_lsp = false, -- this will automatically set compile commands file location using lsp, to use it, please set `cmake_soft_link_compile_commands` to false
     cmake_kits_path = nil, -- this is used to specify global cmake kits path, see CMakeKits for detailed usage
     cmake_variants_message = {
@@ -25,7 +25,7 @@ require("cmake-tools").setup({
     },
     cmake_dap_configuration = { -- debug settings for cmake
         name = "cpp",
-        type = "codelldb",
+        type = "gdb",
         request = "launch",
         stopOnEntry = false,
         runInTerminal = true,
