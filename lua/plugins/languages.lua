@@ -32,10 +32,15 @@ return {
         opts = {
             ---@type lspconfig.options
             servers = {
-                -- pyright will be automatically installed with mason and loaded with lspconfig
                 pyright = {},
                 lua_ls = {},
                 clangd = {},
+                dockerls = {},
+                docker_compose_language_service = {},
+                yamlls = {},
+                texlab = {},
+                jsonls = {},
+                opencl_ls = {},
             },
         },
     },
