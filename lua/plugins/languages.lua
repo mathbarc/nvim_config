@@ -39,6 +39,10 @@ return {
                 texlab = {},
                 jsonls = {},
                 opencl_ls = {},
+                helm_ls = {},
+                jdtls = {},
+                kotlin_language_server = {},
+                taplo = {}
             },
         },
     },
