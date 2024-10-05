@@ -48,4 +48,9 @@ return {
     },
 
     { "Civitasv/cmake-tools.nvim" },
+
+    {
+        "jpfender/pipenv.nvim",
+        requires = "nvim-lua/plenary.nvim",
+    },
 }
