@@ -9,7 +9,10 @@ map.del("n", "<leader>gl")
 map.del("n", "<leader>gL")
 map.del("n", "<leader>gf")
 
-map.set("n","<leader>mb", ":CMakeBuild<CR>")
-map.set("n","<leader>mg", ":CMakeGenerate<CR>")
-map.set("n","<leader>md", ":CMakeDebug<CR>")
-map.set("n","<leader>ms", ":CMakeSelectBuildType<CR>")
+
+
+map.set("n","<leader>cc", "", {desc="CMake Tools"})
+map.set("n","<leader>ccb", ":CMakeBuild<CR>", {desc="Build CMake Project"})
+map.set("n","<leader>ccg", ":CMakeGenerate<CR>", {desc="Generate CMake Build Configuration"})
+map.set("n","<leader>ccd", ":CMakeDebug<CR>", {desc="Debug CMake Project"})
+map.set("n","<leader>ccs", ":CMakeSelectBuildType<CR>", {desc="Select CMake Build Type"})
