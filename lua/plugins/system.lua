@@ -7,5 +7,20 @@ return {
     },
     {
         "mfussenegger/nvim-dap"
+    },
+    {
+        'stevearc/overseer.nvim',
+        opts = {},
+    },
+    {
+        'akinsho/toggleterm.nvim',
+        version = "*",
+        config = true
+    },
+    {
+        's1n7ax/nvim-window-picker',
+        name = 'window-picker',
+        event = 'VeryLazy',
+        version = '2.*',
     }
 }
