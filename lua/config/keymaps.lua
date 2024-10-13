@@ -12,7 +12,7 @@ map.del("n", "<leader>gf")
 
 
 map.set("n","<leader>cc", "", {desc="CMake Tools"})
-map.set("n","<leader>ccb", ":CMakeBuild<CR>", {desc="Build CMake Project"})
+map.set("n","<leader>ccm", ":CMakeBuild<CR>", {desc="Build CMake Project"})
 map.set("n","<leader>ccg", ":CMakeGenerate<CR>", {desc="Generate CMake Build Configuration"})
 map.set("n","<leader>ccd", ":CMakeDebug<CR>", {desc="Debug CMake Project"})
 map.set("n","<leader>ccs", ":CMakeSelectBuildType<CR>", {desc="Select CMake Build Type"})
