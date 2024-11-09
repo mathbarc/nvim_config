@@ -15,6 +15,7 @@ return {
             })
         end,
         keys = {
+            { "<leader>cv", "", desc = "Python Virtual Environment" },
             { "<leader>cvs", "<cmd>VenvSelect<CR>", desc = "Select venv" },
             {
                 "<leader>cvd",
