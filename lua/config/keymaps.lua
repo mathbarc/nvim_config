@@ -12,3 +12,4 @@ map.set("n", "<leader>cct", "<cmd>CMakeSelectLaunchTarget<CR>", { desc = "Select
 map.set("n", "<leader>ccr", "<cmd>CMakeRun<CR>", { desc = "Run Target" })
 map.set("n", "<leader>ccd", "<cmd>CMakeDebug<CR>", { desc = "Debug CMake Project" })
 map.set("n", "<leader>cce", "<cmd>CMakeRunTest<CR>", { desc = "Run Tests" })
+map.set("n", "<leader>ccc", "<cmd>CMakeClean<CR>", { desc = "Clean" })
