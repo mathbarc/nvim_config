@@ -13,4 +13,17 @@ map.set("n", "<leader>ccr", "<cmd>CMakeRun<CR>", { desc = "Run Target" })
 map.set("n", "<leader>ccd", "<cmd>CMakeDebug<CR>", { desc = "Debug CMake Project" })
 map.set("n", "<leader>cce", "<cmd>CMakeRunTest<CR>", { desc = "Run Tests" })
 map.set("n", "<leader>ccc", "<cmd>CMakeClean<CR>", { desc = "Clean" })
-map.set("n", "<leader>ccf", "<cmd>!cp ~/.config/nvim/resource/.clang-format ./<CR>", { desc = "Clean" })
+
+map.set("n", "<leader>ccf", "", { desc = "Code format" })
+map.set(
+    "n",
+    "<leader>ccfc",
+    "<cmd>!cp ~/.config/nvim/resource/.clang-format ./<CR>",
+    { desc = "Copy reference clang-format file" }
+)
+map.set(
+    "n",
+    "<leader>ccfa",
+    "<cmd>!bash ~/.config/nvim/scripts/clang-format-all.sh ./<CR>",
+    { desc = "Apply code format into current folder" }
+)
