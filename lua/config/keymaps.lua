@@ -13,6 +13,7 @@ map.set("n", "<leader>ccr", "<cmd>CMakeRun<CR>", { desc = "Run Target" })
 map.set("n", "<leader>ccd", "<cmd>CMakeDebug<CR>", { desc = "Debug CMake Project" })
 map.set("n", "<leader>cce", "<cmd>CMakeRunTest<CR>", { desc = "Run Tests" })
 map.set("n", "<leader>ccc", "<cmd>CMakeClean<CR>", { desc = "Clean" })
+map.set("n", "<leader>ccv", "<cmd>!cmake-gui build<CR>", { desc = "Show GUI" })
 
 map.set("n", "<leader>ccf", "", { desc = "Code format" })
 map.set(
