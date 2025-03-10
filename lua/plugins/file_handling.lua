@@ -16,6 +16,7 @@ return {
                     },
                     never_show = {},
                 },
+                bind_to_cwd = true,
             },
         },
     },
