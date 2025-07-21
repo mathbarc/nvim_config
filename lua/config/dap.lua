@@ -1,4 +1,10 @@
 local dap = require("dap")
 dap.configurations.python = {
-    justMyCode = false,
+    {
+        name = "Python",
+        type = "python",
+        request = "launch",
+        justMyCode = false,
+        program = "${file}",
+    },
 }
