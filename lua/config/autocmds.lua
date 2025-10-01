@@ -10,4 +10,12 @@ require("cmake-tools").setup({
         end
         return "build/${variant:buildType}"
     end,
+    cmake_dap_configuration = { -- debug settings for cmake
+        name = "cpp",
+        type = "cppdbg",
+        request = "launch",
+        stopOnEntry = false,
+        runInTerminal = true,
+        console = "integratedTerminal",
+    },
 })
