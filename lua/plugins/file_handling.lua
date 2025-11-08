@@ -19,5 +19,17 @@ return {
                 bind_to_cwd = true,
             },
         },
+        window = {
+            position = "left",
+            width = 30,
+            mapping_options = {
+                noremap = true,
+                nowait = true,
+            },
+            auto_focus = false, -- <--- keep focus on text window
+        },
+        buffers = {
+            follow_current_file = true,
+        },
     },
 }
