@@ -44,7 +44,7 @@ return {
                         -- Reopen DBUI in its own window if it got replaced
                         vim.cmd("DBUI")
                         -- Focus back to main
-                        vim.cmd("wincmd p")
+                        vim.cmd("wincmd w")
                     end)
                 end
             end,
