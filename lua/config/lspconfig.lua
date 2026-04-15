@@ -11,3 +11,9 @@ lspconfig.ltex_plus.setup({
         ["$/progress"] = function() end,
     },
 })
+
+lspconfig.pyright.setup({
+    handlers = {
+        ["$/progress"] = function() end,
+    },
+})
