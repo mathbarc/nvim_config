@@ -1,8 +1,0 @@
-require("lazy")
-require("keymaps")
-require("options")
-require("dap")
-require("cmp")
-require("dbui")
-require("autocmds")
-require("ltex")
