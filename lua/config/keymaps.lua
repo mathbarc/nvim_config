@@ -1,7 +1,3 @@
--- Keymaps are automatically loaded on the VeryLazy event
--- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
--- Add any additional keymaps here
-
 local map = vim.keymap
 
 map.set("n", "<leader>cc", "", { desc = "CMake Tools" })
@@ -32,3 +28,12 @@ map.set(
     "<cmd>!bash ~/.config/nvim/scripts/clang-format-all.sh ./<CR>",
     { desc = "Apply code format into current folder" }
 )
+
+map.set("n", "<leader>cp", "", { desc = "Python" })
+map.set("n", "<leader>cps", "<cmd>VenvSelect<CR>", { desc = "Select venv" })
+map.set("n", "<leader>cpi", "<cmd>!uv init<CR>", { desc = "Create new uv project" })
+map.set("n", "<leader>cpu", "<cmd>!uv sync<CR>", { desc = "Update uv venv" })
+map.set("n", "<leader>cpd", function()
+    require("venv-selector").deactivate()
+    print("Deactivating Venv")
+end, { desc = "Deactivate venv" })

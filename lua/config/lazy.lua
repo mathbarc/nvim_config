@@ -20,6 +20,9 @@ require("lazy").setup({
         {
             "LazyVim/LazyVim",
             import = "lazyvim.plugins",
+            opts = {
+                colorscheme = "github_dark_default",
+            },
         },
         -- import/override with your plugins
         { import = "lazyvim.plugins.extras" },
@@ -35,7 +38,7 @@ require("lazy").setup({
         version = false, -- always use the latest git commit
         -- version = "*", -- try installing the latest stable version for plugins that support semver
     },
-    install = { colorscheme = { "tokyonight", "habamax" } },
+    install = { colorscheme = { "github_dark_default" } },
     checker = {
         enabled = true, -- check for plugin updates periodically
         notify = false, -- notify on update
