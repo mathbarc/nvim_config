@@ -1,10 +1,5 @@
+vim.lsp.handlers["$/progress"] = function() end
 local lspconfig = require("lspconfig")
-
-lspconfig.ltex.setup({
-    handlers = {
-        ["$/progress"] = function() end,
-    },
-})
 
 lspconfig.ltex_plus.setup({
     handlers = {
