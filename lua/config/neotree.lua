@@ -7,6 +7,10 @@ require("neo-tree").setup({
             hide_gitignored = true,
             never_show = {},
         },
+        use_libuv_file_watcher = true,
+        follow_current_file = {
+            enabled = true,
+        },
         bind_to_cwd = true,
     },
     window = {
