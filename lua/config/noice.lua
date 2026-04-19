@@ -5,12 +5,11 @@ require("noice").setup({
             ['vim.lsp.handlers["textDocument/signatureHelp"]'] = false,
         },
         progress = {
-            enabled = false, -- Disables the Noice progress bar
+            enabled = false,
         },
     },
     routes = {
         {
-            -- Filter out all LSP progress messages
             filter = {
                 event = "lsp",
                 kind = "progress",
