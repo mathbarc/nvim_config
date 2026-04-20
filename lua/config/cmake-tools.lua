@@ -47,8 +47,8 @@ require("cmake-tools").setup({
         opts = {
             toggleterm = {
                 direction = "float", -- 'vertical' | 'horizontal' | 'tab' | 'float'
-                close_on_exit = true, -- whether close the terminal when exit
-                auto_scroll = true, -- whether auto scroll to the bottom
+                close_on_exit = false, -- whether close the terminal when exit
+                auto_scroll = false, -- whether auto scroll to the bottom
                 singleton = true, -- single instance, autocloses the opened one, if present
             },
         }, -- the options the runner will get, possible values depend on the runner type. See `default_opts` for possible values.
