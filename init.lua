@@ -1,3 +1,4 @@
+require("config.async-fix")
 require("config.lazy")
 require("config.keymaps")
 require("config.options")
