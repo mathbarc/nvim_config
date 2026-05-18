@@ -29,6 +29,7 @@ map.set(
     { desc = "Apply code format into current folder" }
 )
 map.set("n", "<leader>cco", "<cmd>CMakeRun coverage<CR>", { desc = "Run coverage report generation" })
+map.set("n", "<leader>ccx", "<cmd>CMakeOpenCache<CR>", { desc = "Open cache file" })
 
 map.set("n", "<leader>cp", "", { desc = "Python" })
 map.set("n", "<leader>cps", "<cmd>VenvSelect<CR>", { desc = "Select venv" })
