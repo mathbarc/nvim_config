@@ -1,6 +1,7 @@
 local osys = require("cmake-tools.osys")
 require("cmake-tools").setup({
     cmake_generate_options = { "-GNinja", "-DCMAKE_EXPORT_COMPILE_COMMANDS=1" },
+    cmake_use_preset = false,
     cmake_build_directory = function()
         if osys.iswin32 then
             return "build\\${variant:buildType}"
@@ -29,7 +30,7 @@ require("cmake-tools").setup({
     },
     cmake_variants_message = {
         short = { show = true }, -- whether to show short message
-        long = { show = true, max_length = 40 }, -- whether to show long message
+        long = { show = false, max_length = 100 }, -- whether to show long message
     },
     cmake_executor = { -- executor to use
         name = "toggleterm", -- name of the executor

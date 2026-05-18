@@ -28,6 +28,7 @@ map.set(
     "<cmd>!bash ~/.config/nvim/scripts/clang-format-all.sh ./<CR>",
     { desc = "Apply code format into current folder" }
 )
+map.set("n", "<leader>cco", "<cmd>CMakeRun coverage<CR>", { desc = "Run coverage report generation" })
 
 map.set("n", "<leader>cp", "", { desc = "Python" })
 map.set("n", "<leader>cps", "<cmd>VenvSelect<CR>", { desc = "Select venv" })
